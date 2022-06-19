@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <style>
+        .flex {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    </style>
+    <form action="" method="POST" enctype="application/x-www-form-urlencoded">
+        <button type="submit">
+            Текст кнопки
+        </button>
+        <div class="flex">
+            Ввод текста
+            <input type="text" required maxlength="9"> <!-- required делает поле ввода обязательным -->
+            Ввод цифр
+            <input type="number" min="0" max="2">
+            Ввод почты
+            <input type="email">
+            Ввод телефона
+            <input type="tel" placeholder="Введите телефон">
+            
+            <fieldset> 
+                <legend>Рандомные поля</legend>
+                Ввод пароля
+                <input type="password">
+                Ввод даты
+                <input type="date">
+                Поиск
+                <input type="search">
+                <input type="file" accept="image/*">
+            </fieldset>
+
+            <input type="hidden">
+            <div>
+                <label>
+                    <input type="radio" name="gender" value="Мужский">Мужский
+                </label>
+                
+                <input type="radio" name="gender" value="Женский" checked>Женский
+            </div>
+
+            <textarea name="Пусэй" placeholder="Введите пусэй"></textarea>
+
+            <select name="City">
+                <option value="Мурманск" disabled>Мурманск</option>
+                <option value="Москва">Москва</option>
+            </select>
+
+        </div>
+
+        
+        
+    </form>
+</body>
+
+</html>
